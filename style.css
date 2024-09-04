@@ -1,11 +1,12 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* Estiliza o corpo da página */
 body {
     background-image: url(https://lovepaper.org/wp-content/uploads/2023/07/History-Of-Trading-Card-Games-1536x864.jpg);
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    /*background-color: #DDDDDD; /* Cor de fundo da página */
+    background-color: #DDDDDD; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -18,13 +19,14 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
+    z-index: 1;
     color:#FFFFFF;
     background-color: #3f1e09; /* Cor de fundo do rodapé */
     padding: 25px; /* Espaçamento interno */
     border-radius: 10px;
     display: inline;
     position: absolute;
-    margin: -50px 0px 0 -200px;
+    margin: -90px 0px 0 -675px;
     font-family: "Handjet", sans-serif;
     font-optical-sizing: auto;
     font-size: 48px;
@@ -36,21 +38,37 @@ h1 {
 
 /* Estiliza as seções da página */
 
-.background{
+.painel{
     display: flex; /* Usa Flexbox para layout */
     /* flex-direction: column; /* Alinha os itens na vertical */
      background-color: #e9d9d9; /* Cor de fundo do rodapé */
      color: #45474B; /* Cor do texto */
      text-align: center; /* Alinha o texto ao centro */
-     padding: 100px; /* Espaçamento interno */
+     padding: 60px; /* Espaçamento interno */
      width: 100%; /* Largura total da página */
      align-items: center; /* Centraliza os itens horizontalmente */
      margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+     position: absolute;
+     z-index: -1;
+     margin: -150px 0px;
+}
+
+.cabecalho{
+    flex-direction: inherit;
+    position: absolute;
+    margin: 0px -650px 0px 0px;
+}
+
+.news{
+    position: fixed;
+    margin: 70px -700px 0px -90px;
+    list-style-type: none;
+    z-index: 1;
 }
 
 section {
     display: flex; /* Usa Flexbox para layout */
-   /* flex-direction: column; /* Alinha os itens na vertical */
+    flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
@@ -61,7 +79,7 @@ section input {
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
-    margin: 0px 5px; /* Espaçamento abaixo dos inputs */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
     color: #45474B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
@@ -99,6 +117,10 @@ section button {
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Estiliza cada item de resultado */
@@ -140,11 +162,7 @@ div{
 }
   
 /* Organiza as informações de noticias da página */
-.news{
-    position: fixed;
-    margin: 200px 60px 110px 0px;
-    list-style-type: none;
-  }
+
 
 /* Escolha de fonte para links clicáveis */
   a{
@@ -154,6 +172,10 @@ div{
     font-style: normal;
   }
 
+.more-info{
+    width: 20%;
+}
+
 /* Estiliza o rodapé da página */
 footer{
     background-color: #e9d9d9; /* Cor de fundo do rodapé */
@@ -161,6 +183,7 @@ footer{
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
+    margin:0px 0px;
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
@@ -189,3 +212,6 @@ img{
     margin-top: 10px;
   }
 
+  p{
+    margin: 10px 0px;
+  }
